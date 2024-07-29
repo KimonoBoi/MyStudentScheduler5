@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyStudentScheduler5</string>
+
+
+    <string-array name="course_status_array">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Planned</item>
+    </string-array>
+</resources>

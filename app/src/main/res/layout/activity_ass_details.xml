@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AssignmentDetailsActivity">
+
+    <EditText
+        android:id="@+id/assignmentTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment Title"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/assignmentStartDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/assignmentEndDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/assignmentMemoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Memo"
+        android:padding="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="4" />
+
+    <CheckBox
+        android:id="@+id/notificationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification On"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/saveAssignmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/deleteAssignmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/shareAssignmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share" />
+</LinearLayout>

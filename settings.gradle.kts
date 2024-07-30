@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyStudentScheduler5"
 include(":app")
+

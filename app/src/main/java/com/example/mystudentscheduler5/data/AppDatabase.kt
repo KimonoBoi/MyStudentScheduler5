@@ -1,16 +1,8 @@
-package com.example.mystudentscheduler5.data
-
-import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
-import com.example.mystudentscheduler5.data.dao.*
-import com.example.mystudentscheduler5.data.entities.*
-
-@Database(entities = [Course::class, Assignment::class, CourseAssignmentCrossRef::class], version = 1)
+@Database(entities = [Course::class, Assignment::class, Term::class, CourseAssignmentCrossRef::class, TermCourseCrossRef::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun courseDao(): CourseDao
     abstract fun assignmentDao(): AssignmentDao
+    abstract fun termDao(): TermDao
 
     companion object {
         @Volatile

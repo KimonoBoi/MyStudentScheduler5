@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.CourseDetailsActivity"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/courseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/endDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date"
+                android:inputType="date" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status_array" />
+
+            <EditText
+                android:id="@+id/professorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Professor's Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/professorNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Professor's Phone Number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/professorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Professor's Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Memo"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top" />
+
+            <TextView
+                android:id="@+id/assignmentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignments"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/assignmentRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_add"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/button_edit_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Course" />
+
+        <Button
+            android:id="@+id/button_share_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Course" />
+
+        <Button
+            android:id="@+id/button_delete_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Course" />
+    </LinearLayout>
+
+</RelativeLayout>
